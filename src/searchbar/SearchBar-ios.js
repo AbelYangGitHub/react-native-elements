@@ -9,6 +9,7 @@ import {
   View,
   ActivityIndicator,
   Text,
+  Platform
 } from 'react-native';
 
 import ViewPropTypes from '../config/ViewPropTypes';
@@ -26,6 +27,12 @@ const defaultSearchIcon = {
 };
 
 class SearchBar extends Component {
+  shouldComponentUpdate (nextProps){
+    return Platform.OS !== 'ios'
+    || (this.props.value === nextProps.value && (nextProps.defaultValue == undefined || nextProps.defaultValue == '' ))
+    || (this.props.defaultValue === nextProps.defaultValue && (nextProps.value == undefined || nextProps.value == '' ));
+  }
+
   focus = () => {
     this.input.focus();
   };
