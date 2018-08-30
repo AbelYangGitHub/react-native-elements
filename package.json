@@ -1,6 +1,6 @@
 {
-  "name": "react-native-elements",
-  "version": "1.0.0-beta5",
+  "name": "react-native-elements-abelyang",
+  "version": "1.0.0-beta5-abelyang2",
   "description": "React Native Elements & UI Toolkit",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -91,6 +91,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-native-training/react-native-elements.git"
+    "url": "git+https://github.com/AbelYangGitHub/react-native-elements.git"
   }
 }
